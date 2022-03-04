@@ -14,4 +14,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 
 const homeRoutes = require("./routes/homeRoutes");
-app.use("/", homeRoutes);
+app.use("/", homeRoutes); //por que este funciona solo con la barra y el about no
+
+const aboutRoutes = require("./routes/aboutRoutes");
+app.use("/about", aboutRoutes);
